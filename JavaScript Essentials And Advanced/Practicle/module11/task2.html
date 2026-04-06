@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Clock</title>
+</head>
+<body>
+
+<h2 id="clock"></h2>
+
+<script>
+    setInterval(function(){
+        let time = new Date();
+        document.getElementById("clock").innerText = time.toLocaleTimeString();
+    }, 1000);
+</script>
+
+</body>
+</html>
